@@ -1,0 +1,45 @@
+DIGITAL EPIDEMIOLOGY
+ASSIGNMENT #1
+DUE DATE: NOVEMBER 21st, 2016
+HARD DEADLINE: NOVEMBER 28th, 2016
+========================================================
+
+* PART 1 (8 points)
+
+	1.1 - Consider either a synthetic Barabasi-Albert graph, a real social network (e.g., from the SNAP or Konect network data repositories), or a sample of a real social network. If the chosen graph has multiple disconnected components, select its largest connected component. Make sure your graph has at least a few 1000s nodes. Compute and plot the degree distribution of the graph.
+
+	1.2 - Set up a simulation of an SIR epidemic model on the graph. Choose values of the model parameters \beta and \mu that allow the epidemic to take off with high probability, reaching most of the graph. Plot the epidemic curve.
+
+
+* PART 2 (12 points)
+
+	2.1 - Select a random set of N nodes of the graph, which we well refer to as "sentinel nodes". Modify the simulation so that you record the arrival time of the epidemic at these nodes (i.e., the discrete time step at which each of those nodes transitions from the susceptible to the infectious state). Compute the distribution of arrival times for many realizations of the epidemic (~hundreds). Display the resulting distribution using a boxplot.
+
+	2.2 - Consider many random choices for the N sentinel nodes, as well as many epidemics (as already done above), and recompute the above distribution of arrival times (so that this times, it also takes into account the randomness due to the random selection of sentinel nodes).
+
+	2.3 - Compute a few centrality metrics of your choice for all the nodes of the network (e.g., degree centrality, betweenness centrality, PageRank centrality, etc.). For each of these metrics, compute a global ranking of nodes and choose as sentinels the top-N and bottom-N nodes of the ranking. Re-run the simulations of point 1.3 and see how the resulting distribution of arrival times is affected. Build a figure with one boxplot for each strategy for choosing the sentinel nodes (e.g., "random" vs "top-degree" vs ...). Discuss your results.
+
+
+* PART 3 (6 points)
+
+	3.1 - Select N nodes at random as sentinels. Imagine that you do not have global information about the graph, and that you have information about the graph neighborhoods of the chosen nodes. That is, you know the identity of the randomly chosen nodes, the identify of their neighbors, and the edges among the latter. Starting from the initial random set of N nodes, can you build another set of N nodes that improves (reduced) the average detection time of the epidemic ?
+
+	3.2 - If you have solved 3.1, explain why your strategies work.
+
+
+* BONUS tasks (total bonus 8 points max)
+
+	- working with a graph larger than 1 million nodes (5 points)
+
+	- code length shorter than 100 lines (language of your choice), excluding empty lines, comments, statements to import libraries, printing out results and figure plotting (3 points)
+
+	- nicely commented notebook with accurately discussed results (3 points)
+
+	- timely completion of the assignment by due date November 21st (2 points)
+
+
+NOTES:
+- you can use any programming language(s) you like
+- a single self-contained Jupyter Notebook is recommended but not compulsory and does not give you extra points
+- use your preferred tools to solve the assignment!
+
